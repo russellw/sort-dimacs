@@ -5,7 +5,7 @@
     "url": "https://github.com/russellw/sort-dimacs/issues"
   },
   "dependencies": {
-    "command-files": "^1.1.0",
+    "command-files": "^1.1.1",
     "commander": "^2.9.0",
     "dimacs-parser": "^2.3.2"
   },
