@@ -1,22 +1,28 @@
 {
-  "name": "sort-dimacs",
-  "version": "1.0.0",
-  "description": "Sort DIMACS format files by number of variables",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "Russell Wallace <russell.wallace@gmail.com>",
+  "bin": "sort-dimacs.js",
+  "bugs": {
+    "url": "https://github.com/russellw/sort-dimacs/issues"
   },
+  "dependencies": {
+    "command-files": "^1.1.0",
+    "commander": "^2.9.0",
+    "dimacs-parser": "^2.3.1"
+  },
+  "description": "Sort DIMACS format files by number of variables",
+  "homepage": "https://github.com/russellw/sort-dimacs#readme",
+  "keywords": [
+    "dimacs"
+  ],
+  "license": "MIT",
+  "name": "sort-dimacs",
+  "preferGlobal": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/russellw/sort-dimacs.git"
   },
-  "keywords": [
-    "dimacs"
-  ],
-  "author": "Russell Wallace <russell.wallace@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/russellw/sort-dimacs/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/russellw/sort-dimacs#readme"
+  "version": "1.0.0"
 }
