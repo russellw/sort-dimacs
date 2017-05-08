@@ -21,7 +21,7 @@ for (var file of files) {
 	var text = fs.readFileSync(file, 'utf8')
 	var p = dimacs.parse(text, file)
 	var atoms = new Set()
-	for (var clause of clauses)
+	for (var clause of p.clauses)
 		for (var literal of clause) {
 			var polarity = literal.op !== '~'
 			var atom = polarity ? literal : literal[0]
