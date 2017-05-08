@@ -7,7 +7,7 @@
   "dependencies": {
     "command-files": "^1.1.0",
     "commander": "^2.9.0",
-    "dimacs-parser": "^2.3.1"
+    "dimacs-parser": "^2.3.2"
   },
   "description": "Sort DIMACS format files by number of variables",
   "homepage": "https://github.com/russellw/sort-dimacs#readme",
