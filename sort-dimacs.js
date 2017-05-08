@@ -5,17 +5,18 @@ var commandFiles = require('command-files')
 var commander = require('commander')
 var dimacs = require('dimacs-parser')
 var fs = require('fs')
+var path = require('path')
 
 commander.usage('[options] <files>')
 commander.version(require('./package.json').version)
 commander.parse(process.argv)
-var sizes = new Map()
 var files = commandFiles.expand(commander.args, file => {
 	switch (path.extname(file)) {
 	case '.cnf':
 		return true
 	}
 })
+var sizes = new Map()
 for (var file of files) {
 	var stats = fs.statSync(file)
 	var text = fs.readFileSync(file, 'utf8')
